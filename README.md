@@ -2,6 +2,6 @@
 <h3 align="center">Get The Dustbin Near You In One Finger Tap</h3>
 <p align="center">
   <a>
-    <img src="./assets/img/logo.png"/>
+    <img src="./assets/img/logo.png" width="300" height="400"/>
   </a>
 </p>
