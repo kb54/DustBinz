@@ -1,0 +1,57 @@
+.jumbotron {
+  background-image: url("./assets/img/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  background-color: white;
+}
+
+.menu-button {
+  border-radius: 50%;
+}
+
+.phone-card {
+  width: 20rem;
+  height: 37rem;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.phone-footer {
+  text-align: center;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.side-button {
+  width: 200px;
+}
+
+.video-container {
+  /* background-image: url("./assets/img/1.png");
+  background-repeat: no-repeat;
+  background-position: initial; */
+  /* height: 600px;
+  background-color: white; */
+  margin-top: 400px;
+}
+
+.illustration {
+  width: 100%;
+  height: auto;
+}
+
+.illustration-container {
+  height: 600px;
+  width: 300px;
+}
+
+.heading {
+  font-weight: bolder;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
