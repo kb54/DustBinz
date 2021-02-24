@@ -5,12 +5,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Icon from '@mdi/react'
-import {mdiChevronLeft, mdiChevronRight, mdiMenu, mdiPauseCircle, mdiPlayCircle} from '@mdi/js'
+import {mdiChevronLeft, mdiChevronRight, mdiPauseCircle, mdiPlayCircle} from '@mdi/js'
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Slide from 'react-reveal/Slide';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-function Hero({setSidebarOpen}) {
+function Hero() {
 
     const [play, setPlay] = useState(true);
 
@@ -38,9 +40,31 @@ function Hero({setSidebarOpen}) {
 
     return (
         <Jumbotron fluid>
-            <Container fluid>
-                <Row>
 
+                {/* Menu Buttons */}
+                <Nav className="justify-content-center">
+               
+
+                    <Nav.Item>
+                        <Nav.Link eventKey="home" 
+                        onSelect={()=>console.log("home")}>Home</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="demo" 
+                        onSelect={()=>console.log("demo")}>Demo</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="about" 
+                        onSelect={()=>console.log("about")}>About</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="contact" 
+                        onSelect={()=>console.log("contact")}>Contact</Nav.Link>
+                    </Nav.Item>
+                </Nav>
+                <Container fluid>
+                <Row>
+                    {/* Mobile slideshow */}
                     <Col lg={{offset:1}} className="d-none d-lg-block">
 
                         <Slide top>
@@ -85,16 +109,6 @@ function Hero({setSidebarOpen}) {
                         </Slide>
 
                         </Col>
-                    
-                    <Col xs={12} xs={{offset:5, span:5}} lg={{span:1,offset:1}}>
-                        <Button variant='light' className="menu-button">
-                        <Icon path={mdiMenu}
-                        size={2}
-                        color="black"
-                        onClick={setSidebarOpen}
-                        />
-                        </Button>
-                    </Col>
                 </Row>
             </Container>
         </Jumbotron>

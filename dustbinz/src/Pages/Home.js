@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Hero from '../Components/Hero';
-import CustomSidebar from '../Components/CustomSidebar'
+import Information from '../Components/Information';
 import Video from '../Components/Video';
 
 function Home(props) {
@@ -8,10 +8,8 @@ function Home(props) {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     return (
         <>
-        <CustomSidebar sidebarOpen={sidebarOpen} 
-        onSetSidebarOpen={(open)=>setSidebarOpen(open)}/>
-        <Hero setSidebarOpen={()=>setSidebarOpen(true)}/>
-        <Video />
+        <Hero/>
+        <Information />
        </>
     );
 }
