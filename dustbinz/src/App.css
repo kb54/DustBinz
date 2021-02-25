@@ -1,10 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  background: #f0f0f0;
+}
+
 .jumbotron {
-  background-image: url("./assets/img/hero.png");
+  background: url("./assets/img/hero.png"), #f0f0f0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 600px;
-  background-color: white;
 }
 
 .menu-button {
@@ -54,4 +62,62 @@
   font-size: 50px;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
+}
+
+.nav-link {
+  color: #fefefe;
+  font-size: 25px;
+}
+
+.nav-link:hover {
+  color: #161712;
+}
+
+.information-container {
+  margin-top: 350px;
+}
+
+.map-illustration {
+  height: 500px;
+  width: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .info-text {
+    font-family: "Poppins", sans-serif;
+    color: #2db548;
+    font-size: 3vw;
+    font-weight: 600;
+  }
+
+  .info-text-secondary {
+    font-family: "Poppins", sans-serif;
+    color: #ebaa17;
+    font-size: 3vw;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .info-text {
+    font-family: "Montserrat", sans-serif;
+    color: #2db548;
+    font-size: 7vw;
+    text-align: center;
+  }
+
+  .info-text-secondary {
+    font-family: "Montserrat", sans-serif;
+    color: #ebaa17;
+    font-size: 7vw;
+    text-align: center;
+  }
+}
+
+.anim-container-right {
+  background-color: white;
+}
+
+.anim-container-left {
+  background-color: #f0f0f0;
 }

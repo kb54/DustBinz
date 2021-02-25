@@ -5,7 +5,6 @@ import './App.css';
 
 import Home from './Pages/Home';
 import Video from './Components/Video';
-
 ReactDOM.render(
   <Home />,
   document.getElementById('root')
