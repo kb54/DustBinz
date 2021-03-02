@@ -44,7 +44,7 @@ html {
   background-position: initial; */
   /* height: 600px;
   background-color: white; */
-  margin-top: 400px;
+  margin-top: 200px;
 }
 
 .illustration {
@@ -61,7 +61,7 @@ html {
   font-weight: bolder;
   font-size: 50px;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-link {
@@ -115,9 +115,17 @@ html {
 }
 
 .anim-container-right {
+  border-style: solid;
+  border-color: #ebaa17;
+  border-radius: 50px;
   background-color: white;
+  margin-bottom: 5px;
 }
 
 .anim-container-left {
+  border-style: solid;
+  border-color: #2db548;
+  border-radius: 50px;
   background-color: #f0f0f0;
+  margin-bottom: 5px;
 }
