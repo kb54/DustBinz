@@ -130,13 +130,27 @@ html {
   margin-bottom: 5px;
 }
 
-.tag-line {
-  font-size: 3vw;
-  font-family: "Montserrat", sans-serif;
-  color: #fefefe;
-  padding-left: 60px;
+@media screen and (min-width: 992px) {
+  .tag-line {
+    font-size: 3vw;
+    font-family: "Montserrat", sans-serif;
+    color: #fefefe;
+    padding-left: 60px;
+  }
+  .anim-button {
+    border-radius: 10px;
+  }
 }
 
-.anim-button {
-  border-radius: 10px;
+@media screen and (max-width: 992px) {
+  .tag-line {
+    font-size: 8vw;
+    font-family: "Montserrat", sans-serif;
+    color: #fefefe;
+    padding-left: 60px;
+  }
+  .anim-button {
+    border-radius: 10px;
+    margin-top: 400px;
+  }
 }
