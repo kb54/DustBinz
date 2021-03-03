@@ -5,12 +5,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Icon from '@mdi/react'
-import {mdiChevronLeft, mdiChevronRight, mdiPauseCircle, mdiPlayCircle} from '@mdi/js'
+import {mdiChevronLeft, mdiChevronRight, mdiPauseCircle, mdiPlayCircle, mdiMapMarkerRadius} from '@mdi/js'
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Slide from 'react-reveal/Slide';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import AnimatedButton from '../Components/AnimatedButton';
+
 
 function Hero() {
 
@@ -112,6 +114,10 @@ function Hero() {
                         <Col lg={8}>
                             <p className="tag-line">स्वच्छ भारत सुन्दर भारत</p>
                         </Col>
+                </Row>
+                <Row className="justify-content-center">
+                    <AnimatedButton text="Locate The Nearest Dustbin"
+                    path={mdiMapMarkerRadius}/>
                 </Row>
             </Container>
         </Jumbotron>

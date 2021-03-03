@@ -5,8 +5,9 @@ import './App.css';
 
 import Home from './Pages/Home';
 import Video from './Components/Video';
+import AnimatedButton from './Components/AnimatedButton';
 ReactDOM.render(
-  <Home />,
+  <Home/>,
   document.getElementById('root')
 );
 

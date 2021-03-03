@@ -136,3 +136,7 @@ html {
   color: #fefefe;
   padding-left: 60px;
 }
+
+.anim-button {
+  border-radius: 10px;
+}
