@@ -84,7 +84,7 @@ function Hero() {
                         <Carousel.Item>
                             <img
                             src="./assets/img/2.png"
-                            alt="Second slide"
+                            alt="Second slide" 
                             />
                         </Carousel.Item>
                         <Carousel.Item>
@@ -108,6 +108,9 @@ function Hero() {
                         </Card>
                         </Slide>
 
+                        </Col>
+                        <Col lg={8}>
+                            <p className="tag-line">स्वच्छ भारत सुन्दर भारत</p>
                         </Col>
                 </Row>
             </Container>

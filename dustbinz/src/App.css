@@ -129,3 +129,10 @@ html {
   background-color: #f0f0f0;
   margin-bottom: 5px;
 }
+
+.tag-line {
+  font-size: 3vw;
+  font-family: "Montserrat", sans-serif;
+  color: #fefefe;
+  padding-left: 60px;
+}
