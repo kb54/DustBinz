@@ -4,9 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import Home from './Pages/Home';
-import Video from './Components/Video';
-import AnimatedButton from './Components/AnimatedButton';
-import DustbinzMap from './Components/DustbinzMap';
 ReactDOM.render(
   <Home />,
   document.getElementById('root')
