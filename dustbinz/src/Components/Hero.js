@@ -12,11 +12,13 @@ import Slide from 'react-reveal/Slide';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import AnimatedButton from '../Components/AnimatedButton';
+import MapModal from './MapModal';
 
 
 function Hero() {
 
     const [play, setPlay] = useState(true);
+    const [showModal, setShowModal] = useState(false);
 
     const nextIcon = ()=>{
         return(
@@ -36,6 +38,10 @@ function Hero() {
         color="black"
         />
         );
+    }
+
+    const handleClose = ()=>{
+        setShowModal(false);
     }
 
 
@@ -117,7 +123,9 @@ function Hero() {
                 </Row>
                 <Row className="justify-content-center">
                     <AnimatedButton text="Locate The Nearest Dustbin"
-                    path={mdiMapMarkerRadius}/>
+                    path={mdiMapMarkerRadius}
+                    handleClick={()=>setShowModal(true)}/>
+                    <MapModal show={showModal} handleClose={handleClose}/>
                 </Row>
             </Container>
         </Jumbotron>
