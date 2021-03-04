@@ -2,37 +2,23 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
-import ReactPlayer from 'react-player/youtube'
-import Fade from 'react-reveal/Fade';
+import YouTube from 'react-youtube-embed'
+import VideoVisible from '../animations/VideoVisible';
 
 function Video(props) {
     return (
-        <Container className="video-container" fluid>
-            <Fade top>
-            <p className="heading">Demo Video</p>
-            </Fade>
-            <Fade top>
+        <Container className="video-container overflow-hidden" fluid>
+            <p className="heading">Demo Video 📺</p>
             <Row>
-                <Col xs={12} lg={2} className="d-none d-lg-block">
-                <Image src='./assets/illustrations/cherry-383.png' className="illustration"/>
-                </Col>
-
-                <Col lg={10} lg={{offset:1}} className="d-none d-lg-block">
-                    <ReactPlayer 
-                    url="https://www.youtube.com/watch?v=qGs9H2cd-sI"
-                    width="1000px"
-                    height="500px"/>
-                </Col>
-               
+                
+                <VideoVisible img="./assets/illustrations/cherry-383.png" 
+                id="A71aqufiNtQ"/>
+                
+                {/* for small screens */}
                 <Col className="d-xs-block d-lg-none">
-                    <ReactPlayer 
-                    url="https://www.youtube.com/watch?v=qGs9H2cd-sI"
-                    width="380px"
-                    height="200px"/>
+                   <YouTube id='A71aqufiNtQ' />
                 </Col>
             </Row>
-            </Fade>
         </Container>
     );
 }

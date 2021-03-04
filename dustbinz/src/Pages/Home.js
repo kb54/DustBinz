@@ -10,6 +10,7 @@ function Home(props) {
         <>
         <Hero/>
         <Information />
+        <Video />
        </>
     );
 }

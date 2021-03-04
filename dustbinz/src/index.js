@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import Home from './Pages/Home';
-import Video from './Components/Video';
 ReactDOM.render(
   <Home />,
   document.getElementById('root')
