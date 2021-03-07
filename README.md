@@ -6,6 +6,10 @@
   </a>
 </p>
 
+## Deployment
+
+[Heroku link](https://dustbinz.herokuapp.com/)
+
 ## About The Project
 
 An Application towards a clean environment by tracking the nearest Dustbin for you.
