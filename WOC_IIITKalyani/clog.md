@@ -15,3 +15,5 @@
 8. Map Added-[Commit link](https://github.com/ishanExtreme/DustBinz/commit/9beea1da5f6cd7085935bd6309d5867ddd2f10ad)
 
 9. Code Cleanup-[Commit link](https://github.com/ishanExtreme/DustBinz/commit/ca34a58715fb30134e358c0fa5aac8e9c36ba266)
+
+10. Production Build Added-[Commit link](https://github.com/ishanExtreme/DustBinz/commit/6d4d050d7ea168e2726c6edeb26a1814b6b6bd62)
